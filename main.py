@@ -1,6 +1,6 @@
 import secrets
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from ideas import *
@@ -22,7 +22,6 @@ async def root(request: Request):
             "idea": idea["idea"],
         },
     )
-
 
 @app.get("/writing")
 async def writing(request: Request):
