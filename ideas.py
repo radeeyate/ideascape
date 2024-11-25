@@ -171,6 +171,162 @@ projectsList = [
         "lang": "Lua",
         "idea": "Build a game modding tool that allows users to create and share custom mods for popular games.",
     },
+    {
+        "lang": "Python",
+        "idea": "Develop a virtual assistant that can perform tasks such as setting reminders, sending emails, and providing weather updates based on voice commands.",
+    },
+    {
+        "lang": "JavaScript",
+        "idea": "Create a web-based collaborative whiteboard that allows multiple users to draw and write in real-time.",
+    },
+    {
+        "lang": "Java",
+        "idea": "Build a library management system that tracks book inventory, manages user accounts, and handles book borrowing and returning.",
+    },
+    {
+        "lang": "C++",
+        "idea": "Implement a real-time strategy game where players can build bases, train units, and engage in battles against AI or other players.",
+    },
+    {
+        "lang": "Ruby",
+        "idea": "Create an event management platform that allows users to create, manage, and promote events, with features like ticket sales and attendee registration.",
+    },
+    {
+        "lang": "Swift",
+        "idea": "Develop a mobile app that helps users find and book local services such as plumbers, electricians, and cleaners.",
+    },
+    {
+        "lang": "PHP",
+        "idea": "Build an online marketplace where users can buy and sell handmade products, with features like user reviews and secure payment processing.",
+    },
+    {
+        "lang": "C#",
+        "idea": "Design a virtual reality (VR) application that allows users to explore virtual environments and interact with objects in a 3D space.",
+    },
+    {
+        "lang": "TypeScript",
+        "idea": "Create a project management tool that integrates with other services like GitHub and Slack to streamline workflows and improve team collaboration.",
+    },
+    {
+        "lang": "Go",
+        "idea": "Develop a blockchain-based voting system that ensures secure and transparent voting processes.",
+    },
+    {
+        "lang": "Kotlin",
+        "idea": "Build a mobile app that uses augmented reality (AR) to provide users with interactive learning experiences in subjects like science and history.",
+    },
+    {
+        "lang": "Rust",
+        "idea": "Implement a secure file-sharing platform that allows users to share files with end-to-end encryption and access controls.",
+    },
+    {
+        "lang": "Lua",
+        "idea": "Build a game development framework that simplifies the creation of 2D games by providing pre-built components and tools.",
+    },
+    {
+        "lang": "Python",
+        "idea": "Create a data visualization tool that allows users to generate interactive charts and graphs from various data sources.",
+    },
+    {
+        "lang": "JavaScript",
+        "idea": "Develop a web-based presentation tool that allows users to create and share interactive presentations with animations and multimedia elements.",
+    },
+    {
+        "lang": "Java",
+        "idea": "Build a social networking platform that allows users to connect with friends, share updates, and join groups based on common interests.",
+    },
+    {
+        "lang": "C++",
+        "idea": "Implement a multiplayer online battle arena (MOBA) game where players can form teams and compete in strategic battles.",
+    },
+    {
+        "lang": "Ruby",
+        "idea": "Create a customer relationship management (CRM) system that helps businesses manage customer interactions and sales processes.",
+    },
+    {
+        "lang": "Swift",
+        "idea": "Develop a mobile app that provides users with personalized news feeds based on their interests and preferences.",
+    },
+    {
+        "lang": "PHP",
+        "idea": "Build an online learning platform that offers courses, quizzes, and certificates in various subjects.",
+    },
+    {
+        "lang": "C#",
+        "idea": "Design a home automation system that allows users to control smart devices in their home through a centralized interface.",
+    },
+    {
+        "lang": "TypeScript",
+        "idea": "Create a customer support chatbot that can handle common customer inquiries and provide assistance in real-time.",
+    },
+    {
+        "lang": "Go",
+        "idea": "Develop a decentralized storage system that allows users to store and share files securely across a network of nodes.",
+    },
+    {
+        "lang": "Kotlin",
+        "idea": "Build a mobile app that uses machine learning to provide personalized health and wellness recommendations based on user data.",
+    },
+    {
+        "lang": "Rust",
+        "idea": "Implement a high-performance game server that can handle thousands of concurrent players and provide low-latency gameplay.",
+    },
+    {
+        "lang": "Lua",
+        "idea": "Build a game analytics tool that collects and analyzes player data to provide insights into game performance and user behavior.",
+    },
+    {
+        "lang": "Python",
+        "idea": "Create a natural language processing (NLP) tool that can analyze text data and perform tasks like sentiment analysis and topic modeling.",
+    },
+    {
+        "lang": "JavaScript",
+        "idea": "Develop a web-based animation tool that allows users to create and share animated content with ease.",
+    },
+    {
+        "lang": "Java",
+        "idea": "Build a real-time collaboration platform that allows users to work together on code, documents, and other projects in real-time.",
+    },
+    {
+        "lang": "C++",
+        "idea": "Implement a physics simulation engine that can be used for scientific research and educational purposes.",
+    },
+    {
+        "lang": "Ruby",
+        "idea": "Create a project management tool that helps teams plan, track, and manage their projects with features like task assignments and progress tracking.",
+    },
+    {
+        "lang": "Swift",
+        "idea": "Develop a mobile app that provides users with personalized travel recommendations and itineraries based on their preferences and travel history.",
+    },
+    {
+        "lang": "PHP",
+        "idea": "Build an online auction platform that allows users to buy and sell items through a bidding process.",
+    },
+    {
+        "lang": "C#",
+        "idea": "Design a virtual classroom platform that allows teachers to conduct live classes, share resources, and interact with students in real-time.",
+    },
+    {
+        "lang": "TypeScript",
+        "idea": "Create a customer feedback system that collects and analyzes customer feedback to improve products and services.",
+    },
+    {
+        "lang": "Go",
+        "idea": "Develop a peer-to-peer file-sharing network that allows users to share files directly with each other without a central server.",
+    },
+    {
+        "lang": "Kotlin",
+        "idea": "Build a mobile app that uses machine learning to provide personalized fashion recommendations based on user style and preferences.",
+    },
+    {
+        "lang": "Rust",
+        "idea": "Implement a secure messaging platform that provides end-to-end encryption and ensures user privacy.",
+    },
+    {
+        "lang": "Lua",
+        "idea": "Build a game development tool that simplifies the creation of 3D games by providing pre-built components and tools.",
+    },
 ]
 
 writingIdeas = (
