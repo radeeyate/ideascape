@@ -15,39 +15,30 @@
 <body>
     <section class="section">
         <div class="container">
-            <h1 class="title">Ideascape - {{ category | title }}</h1>
+            <h1 class="title">Ideascape - {{ {"programming": lang, "python": lang, "c++": lang, "rust": lang, "lua": lang, "java": lang, "javascript": lang, "swift": lang, "ruby": lang, "php": lang, "typescript": lang, "kotlin": lang, "c#": lang, "writing": genre, "hackathon": sector, "music": genre, "art": medium, "design": sector, "photography": genre, "film": genre}[category] }}</h1>
 
             <div class="content">
-                <p>{{ {"programming": "Language", "writing": "Genre", "hackathon": "Category", "music": "Genre", "art": "Medium", "design": "Category", "photography": "Genre", "film": "Genre"}[category] }}: {{ {"programming": lang, "writing": genre, "hackathon": sector, "music": genre, "art": medium, "design": sector, "photography": genre, "film": genre}[category] }}</p>
+                <p>{{ {"programming": "Language", "python": "Language", "c++": "Language", "rust": "Language", "lua": "Language", "java": "Language", "javascript": "Language", "swift": "Language", "ruby": "Language", "php": "Language", "typescript": "Language", "kotlin": "Language", "c#": "Language", "writing": "Genre", "hackathon": "Category", "music": "Genre", "art": "Medium", "design": "Category", "photography": "Genre", "film": "Genre"}[category] }}: {{ {"programming": lang, "python": lang, "c++": lang, "rust": lang, "lua": lang, "java": lang, "javascript": lang, "swift": lang, "ruby": lang, "php": lang, "typescript": lang, "kotlin": lang, "c#": lang, "writing": genre, "hackathon": sector, "music": genre, "art": medium, "design": sector, "photography": genre, "film": genre}[category] }}</p>
                 <p>Idea: {{ idea }}</p>
                 <p>or, get an idea for one of the following:</p>
                 <div class="buttons are-centered">
-                    {% if not category == "programming" %}
-                        <a href="/" class="button is-link has-background-primary-dark">programming</a>
-                    {% endif %}
-                    {% if not category == "film" %}
-                        <a href="/film" class="button is-link has-background-primary-dark">film & video</a>
-                    {% endif %}
-                    {% if not category == "photography" %}
-                        <a href="/photography" class="button is-link has-background-primary-dark">photography</a>
-                    {% endif %}
-                    {% if not category == "design" %}
-                        <a href="/design" class="button is-link has-background-primary-dark">design</a>
-                    {% endif %}
-                    {% if not category == "writing" %}
-                        <a href="/writing" class="button is-link has-background-primary-dark">writing</a>
-                    {% endif %}
-                    {% if not category == "art" %}
-                        <a href="/art" class="button is-link has-background-primary-dark">art</a>
-                    {% endif %}
-                    {% if not category == "music" %}
-                        <a href="/music" class="button is-link has-background-primary-dark">music</a>
-                    {% endif %}
-                    {% if not category == "hackathon" %}
-                        <a href="/hackathon" class="button is-link has-background-primary-dark">hackathon</a>
-                    {% endif %}
+                    {% for i in ("programming", "film", "photography", "design", "writing", "art", "music") %}
+                        {% if not category == i %}
+                            <a href="/{% if i != 'programming' %}{{ i }}{% endif %}" class="button is-link has-background-primary-dark">{{ i }}</a>
+                        {% endif %}
+                    {% endfor %}
                     <a href="javascript:window.location.reload(true)" class="button is-link has-background-primary-dark">get another {{ category }} idea</a>
                 </div>
+                {% if category in ("programming", "python", "c++", "rust", "lua", "java", "javascript", "swift", "ruby", "php", "typescript", "kotlin", "c#") %}
+                    <p>or specifically:</p>
+                    <div class="buttons are-centered">
+                        {% for lang in ("python", "c++", "rust", "lua", "java", "javascript", "swift", "ruby", "php", "typescript", "kotlin", "c#") %}
+                            {% if not category == lang %}
+                                <a href="/{{ lang }}" class="button is-link has-background-primary-dark">{{ lang }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
         </div>
     </section>
