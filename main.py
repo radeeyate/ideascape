@@ -157,22 +157,6 @@ async def ruby(request: Request):
     )
 
 
-@app.get("/php")
-async def php(request: Request):
-    idea = secrets.choice(
-        [idea["idea"] for idea in projectsList if idea["lang"] == "PHP"]
-    )
-    return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "category": "php",
-            "lang": "PHP",
-            "idea": idea,
-        },
-    )
-
-
 @app.get("/typescript")
 async def typescript(request: Request):
     idea = secrets.choice(
